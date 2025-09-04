@@ -30,4 +30,4 @@ jobs:
           git commit -m "Auto-build index.html" || echo "No changes to commit"
           git push
         env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
