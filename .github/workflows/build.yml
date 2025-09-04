@@ -6,7 +6,7 @@ on:
       - main   # o la rama que uses
     paths:
       - 'content/**'    # solo si cambian los .md
-      - 'build.sh'
+      - 'portis.sh'
       - '.github/workflows/**'
 
 jobs:
@@ -24,8 +24,8 @@ jobs:
 
       - name: Commit HTML output
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Stand Your Gists"
+          git config user.email "yand@quien.es.eu.org"
           git add index.html
           git commit -m "Auto-build index.html" || echo "No changes to commit"
           git push
